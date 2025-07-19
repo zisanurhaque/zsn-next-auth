@@ -1,0 +1,51 @@
+{
+  "name": "zsn-next-auth",
+  "version": "1.0.0",
+  "description": "Lightweight Next.js auth helper for managing access and refresh tokens via cookies. Includes easy-to-use functions to set, get, refresh, and clear tokens. Provides Axios instances with automatic token refresh on 401 errors. Fully configurable for your API endpoints and cookie settings.",
+  "keywords": [
+    "nextjs",
+    "authentication",
+    "auth",
+    "token",
+    "jwt",
+    "cookies",
+    "refresh-token",
+    "access-token",
+    "axios",
+    "axios-instance"
+  ],
+  "license": "MIT",
+  "author": "Zisanur Haque",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zisanurhaque/zsn-next-auth"
+  },
+  "bugs": {
+    "url": "https://github.com/zisanurhaque/zsn-next-auth/issues"
+  },
+  "homepage": "https://github.com/zisanurhaque/zsn-next-auth#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cookies-next": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
